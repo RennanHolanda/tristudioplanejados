@@ -537,3 +537,126 @@ p { font-size: 1rem; color: var(--cor-cinza-escuro); }
 .btn-topo:hover {
   background: var(--cor-secundaria);
 }
+/* ===================================
+   RESPONSIVO - MOBILE
+   =================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+  .diferenciais__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (celulares) */
+@media (max-width: 768px) {
+
+  /* Header / Menu hambúrguer */
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background: var(--cor-clara);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--espaco-lg);
+    gap: var(--espaco-md);
+    transition: right var(--transicao-suave);
+    box-shadow: var(--sombra-forte);
+  }
+
+  .menu-mobile-ativo .header__nav {
+    right: 0;
+  }
+
+  .header__link {
+    color: var(--cor-cinza-escuro) !important;
+    font-size: 1.1rem;
+  }
+
+  .header__hamburguer {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    height: 90vh;
+    min-height: 500px;
+    text-align: center;
+  }
+
+  .hero__conteudo {
+    max-width: 100%;
+    padding: 0 var(--espaco-md);
+    margin: 0 auto;
+  }
+
+  .hero__conteudo p {
+    max-width: 100%;
+  }
+
+  .hero__botoes {
+    justify-content: center;
+  }
+
+  /* Diferenciais */
+  .diferenciais__grid {
+    grid-template-columns: 1fr;
+    gap: var(--espaco-md);
+  }
+
+  /* Timeline */
+  .timeline__lista {
+    flex-direction: column;
+    gap: var(--espaco-lg);
+  }
+
+  .timeline__lista::before {
+    display: none;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--espaco-md);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Botão voltar ao topo */
+  .btn-topo {
+    width: 42px;
+    height: 42px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__botoes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-diferencial {
+    padding: var(--espaco-md);
+  }
+}
