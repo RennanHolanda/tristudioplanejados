@@ -1,0 +1,41 @@
+/* ===================================
+   VARIÁVEIS GLOBAIS - TriStudio Planejados
+   =================================== */
+:root {
+  /* Cores institucionais */
+  --cor-primaria: #6A1F2B;      /* Bordô */
+  --cor-secundaria: #B89A5C;    /* Dourado fosco */
+  --cor-clara: #FFFFFF;
+  --cor-cinza-claro: #F5F5F5;
+  --cor-cinza-escuro: #333333;
+
+  /* Variações de opacidade */
+  --cor-primaria-hover: #55161f;
+  --overlay-escuro: rgba(0, 0, 0, 0.55);
+
+  /* Tipografia */
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-texto: 'Poppins', sans-serif;
+
+  /* Espaçamentos */
+  --espaco-xs: 0.5rem;
+  --espaco-sm: 1rem;
+  --espaco-md: 2rem;
+  --espaco-lg: 4rem;
+  --espaco-xl: 6rem;
+
+  /* Transições */
+  --transicao-rapida: 0.25s ease;
+  --transicao-suave: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  /* Sombras */
+  --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --sombra-media: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --sombra-forte: 0 15px 40px rgba(0, 0, 0, 0.18);
+
+  /* Layout */
+  --container-max: 1200px;
+  --header-altura: 90px;
+  --header-altura-scroll: 65px;
+  --radius-padrao: 6px;
+}

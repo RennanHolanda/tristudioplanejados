@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Solicite seu Orçamento | TriStudio Planejados</title>
+  <meta name="description" content="Solicite um orçamento gratuito e sem compromisso para seu projeto de móveis planejados. Atendimento especializado da TriStudio Planejados.">
+  <link rel="canonical" href="https://www.tristudioplanejados.com.br/orcamento.html">
+
+  <meta property="og:title" content="Solicite seu Orçamento | TriStudio Planejados">
+  <meta property="og:description" content="Preencha o formulário e receba uma proposta personalizada para seu projeto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tristudioplanejados.com.br/orcamento.html">
+
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.tristudioplanejados.com.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Orçamento", "item": "https://www.tristudioplanejados.com.br/orcamento.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header header--scrolled" role="banner">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" aria-label="TriStudio Planejados - Página inicial">
+        <img src="assets/logo/logo.png" alt="Logo TriStudio Planejados" width="160" height="48">
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Menu principal">
+        <a href="sobre.html" class="header__link">Conheça a TriStudio</a>
+        <a href="ambientes.html" class="header__link">Ambientes</a>
+        <a href="orcamento.html" class="header__link">Solicite seu orçamento</a>
+        <a href="contato.html" class="header__link">Contato</a>
+      </nav>
+      <button class="header__hamburguer" aria-controls="header__nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== BANNER ===================== -->
+    <section class="banner-pagina">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="index.html">Início</a> <span>/</span> <span aria-current="page">Orçamento</span>
+        </nav>
+        <p class="subtitulo">Vamos começar seu projeto</p>
+        <h1>Solicite seu Orçamento</h1>
+        <p>Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FORMULÁRIO ===================== -->
+    <section class="secao-orcamento">
+      <div class="container container--estreito">
+
+        <form id="form-orcamento" class="formulario" novalidate aria-label="Formulário de solicitação de orçamento">
+
+          <!-- Nome -->
+          <div class="campo">
+            <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required aria-required="true">
+            <span class="campo__erro" id="erro-nome" role="alert"></span>
+          </div>
+
+          <!-- Telefone e WhatsApp -->
+          <div class="campo-grupo">
+            <div class="campo">
+              <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" required aria-required="true">
+              <span class="campo__erro" id="erro-telefone" role="alert"></span>
+            </div>
+
+            <div class="campo">
+              <label for="whatsapp">WhatsApp <span aria-hidden="true">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required aria-required="true">
+              <span class="campo__erro" id="erro-whatsapp" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Email e Cidade -->
+          <div class="campo-grupo">
+            <div class="campo">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required aria-required="true">
+              <span class="campo__erro" id="erro-email" role="alert"></span>
+            </div>
+
+            <div class="campo">
+              <label for="cidade">Cidade <span aria-hidden="true">*</span></label>
+              <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required aria-required="true">
+              <span class="campo__erro" id="erro-cidade" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Ambiente desejado -->
+          <div class="campo">
+            <label for="ambiente">Ambiente desejado <span aria-hidden="true">*</span></label>
+            <select id="ambiente" name="ambiente" required aria-required="true">
+              <option value="" selected disabled>Selecione um ambiente</option>
+              <option value="cozinhas">Cozinhas</option>
+              <option value="quartos">Quartos</option>
+              <option value="closets">Closets</option>
+              <option value="banheiros">Banheiros</option>
+              <option value="home-office">Home Office</option>
+              <option value="salas">Sala de TV</option>
+              <option value="paineis">Painéis</option>
+              <option value="gourmet">Área Gourmet</option>
+              <option value="lavanderias">Lavanderia</option>
+              <option value="outro">Outro / Vários ambientes</option>
+            </select>
+            <span class="campo__erro" id="erro-ambiente" role="alert"></span>
+          </div>
+
+          <!-- Mensagem -->
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos mais sobre o seu projeto (opcional)"></textarea>
+          </div>
+
+          <!-- Feedback geral -->
+          <div class="formulario__feedback" id="feedback-geral" role="status" aria-live="polite"></div>
+
+          <button type="submit" class="btn btn-primario formulario__enviar">Enviar solicitação</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__coluna">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/logo/logo.png" alt="Logo TriStudio Planejados">
+        </a>
+        <p>Móveis planejados de alto padrão, unindo design, funcionalidade e sofisticação em cada projeto.</p>
+      </div>
+      <div class="footer__coluna">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça</a></li>
+          <li><a href="ambientes.html">Ambientes</a></li>
+          <li><a href="orcamento.html">Orçamento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer__coluna">
+        <h4>Ambientes</h4>
+        <ul>
+          <li><a href="ambientes.html#cozinhas">Cozinhas</a></li>
+          <li><a href="ambientes.html#closets">Closets</a></li>
+          <li><a href="ambientes.html#quartos">Quartos</a></li>
+          <li><a href="ambientes.html#banheiros">Banheiros</a></li>
+          <li><a href="ambientes.html#paineis">Painéis</a></li>
+          <li><a href="ambientes.html#home-office">Home Office</a></li>
+          <li><a href="ambientes.html#gourmet">Área Gourmet</a></li>
+        </ul>
+      </div>
+      <div class="footer__coluna">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+558190000000">(81) 9 0000-0000</a></li>
+          <li><a href="https://wa.me/558190000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:contato@tristudioplanejados.com.br">contato@tristudioplanejados.com.br</a></li>
+          <li><a href="https://instagram.com/tristudioplanejados" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Rua Exemplo, 123 – Recife, PE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>&copy; 2026 TriStudio Planejados. Todos os direitos reservados.</span>
+      <span><a href="politica-de-privacidade.html">Política de Privacidade</a> | <a href="sitemap.xml">Mapa do Site</a></span>
+    </div>
+  </footer>
+
+  <button class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/header.js"></script>
+  <script src="js/menu-mobile.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /politica-de-privacidade.html
+
+Sitemap: https://www.tristudioplanejados.com.br/sitemap.xml

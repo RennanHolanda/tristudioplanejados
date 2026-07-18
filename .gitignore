@@ -1,0 +1,19 @@
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.old
+*.log
+
+# Ambiente (se houver chaves de API, etc.)
+.env

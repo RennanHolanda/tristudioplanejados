@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ambientes Planejados | TriStudio Planejados</title>
+  <meta name="description" content="Conheça os ambientes planejados pela TriStudio: cozinhas, quartos, closets, banheiros, home office, área gourmet e mais. Projetos sob medida.">
+  <link rel="canonical" href="https://www.tristudioplanejados.com.br/ambientes.html">
+
+  <meta property="og:title" content="Ambientes Planejados | TriStudio Planejados">
+  <meta property="og:description" content="Veja nossos projetos de móveis planejados por ambiente.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tristudioplanejados.com.br/ambientes.html">
+  <meta property="og:image" content="/assets/imagens/cozinhas/cozinha-01.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.tristudioplanejados.com.br/" },
+      { "@type": "ListItem", "position": 2, "name": "Ambientes", "item": "https://www.tristudioplanejados.com.br/ambientes.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header header--scrolled" role="banner">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" aria-label="TriStudio Planejados - Página inicial">
+        <img src="assets/logo/logo.png" alt="Logo TriStudio Planejados" width="160" height="48">
+      </a>
+      <nav class="header__nav" role="navigation" aria-label="Menu principal">
+        <a href="sobre.html" class="header__link">Conheça a TriStudio</a>
+        <a href="ambientes.html" class="header__link">Ambientes</a>
+        <a href="orcamento.html" class="header__link">Solicite seu orçamento</a>
+        <a href="contato.html" class="header__link">Contato</a>
+      </nav>
+      <button class="header__hamburguer" aria-controls="header__nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== BANNER DE PÁGINA ===================== -->
+    <section class="banner-pagina">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="index.html">Início</a> <span>/</span> <span aria-current="page">Ambientes</span>
+        </nav>
+        <p class="subtitulo">Nossos projetos</p>
+        <h1>Ambientes Planejados</h1>
+        <p>Explore cada categoria e descubra soluções sob medida para transformar seu espaço.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORIAS ===================== -->
+    <section class="ambientes" aria-label="Galeria de ambientes">
+      <div class="container">
+
+        <!-- Menu de categorias -->
+        <div class="ambientes__categorias" role="tablist" aria-label="Categorias de ambientes">
+          <button class="categoria-btn categoria-btn--ativo" data-categoria="cozinhas" role="tab" aria-selected="true">Cozinhas</button>
+          <button class="categoria-btn" data-categoria="quartos" role="tab" aria-selected="false">Quartos</button>
+          <button class="categoria-btn" data-categoria="closets" role="tab" aria-selected="false">Closets</button>
+          <button class="categoria-btn" data-categoria="banheiros" role="tab" aria-selected="false">Banheiros</button>
+          <button class="categoria-btn" data-categoria="home-office" role="tab" aria-selected="false">Home Office</button>
+          <button class="categoria-btn" data-categoria="salas" role="tab" aria-selected="false">Sala de TV</button>
+          <button class="categoria-btn" data-categoria="paineis" role="tab" aria-selected="false">Painéis</button>
+          <button class="categoria-btn" data-categoria="gourmet" role="tab" aria-selected="false">Área Gourmet</button>
+          <button class="categoria-btn" data-categoria="lavanderias" role="tab" aria-selected="false">Lavanderia</button>
+        </div>
+
+        <!-- Galeria dinâmica (preenchida via JS) -->
+        <div class="ambientes__galeria" id="galeria" role="tabpanel" aria-live="polite">
+          <!-- As imagens são inseridas dinamicamente pelo gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta" aria-label="Chamada para ação">
+      <h2>Encontrou o ambiente que procurava?</h2>
+      <a href="orcamento.html" class="btn btn-primario" style="background:var(--cor-secundaria)">Solicite seu orçamento</a>
+    </section>
+  </main>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem ampliada">
+    <button class="lightbox__fechar" id="lightbox-fechar" aria-label="Fechar visualização">&times;</button>
+    <button class="lightbox__anterior" id="lightbox-anterior" aria-label="Imagem anterior">&#8249;</button>
+
+    <div class="lightbox__conteudo">
+      <img src="" alt="" id="lightbox-imagem" class="lightbox__imagem">
+    </div>
+
+    <button class="lightbox__proxima" id="lightbox-proxima" aria-label="Próxima imagem">&#8250;</button>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__coluna">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/logo/logo.png" alt="Logo TriStudio Planejados">
+        </a>
+        <p>Móveis planejados de alto padrão, unindo design, funcionalidade e sofisticação em cada projeto.</p>
+      </div>
+      <div class="footer__coluna">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça</a></li>
+          <li><a href="ambientes.html">Ambientes</a></li>
+          <li><a href="orcamento.html">Orçamento</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer__coluna">
+        <h4>Ambientes</h4>
+        <ul>
+          <li><a href="#" data-categoria-link="cozinhas">Cozinhas</a></li>
+          <li><a href="#" data-categoria-link="closets">Closets</a></li>
+          <li><a href="#" data-categoria-link="quartos">Quartos</a></li>
+          <li><a href="#" data-categoria-link="banheiros">Banheiros</a></li>
+          <li><a href="#" data-categoria-link="paineis">Painéis</a></li>
+          <li><a href="#" data-categoria-link="home-office">Home Office</a></li>
+          <li><a href="#" data-categoria-link="gourmet">Área Gourmet</a></li>
+        </ul>
+      </div>
+      <div class="footer__coluna">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+558190000000">(81) 9 0000-0000</a></li>
+          <li><a href="https://wa.me/558190000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:contato@tristudioplanejados.com.br">contato@tristudioplanejados.com.br</a></li>
+          <li><a href="https://instagram.com/tristudioplanejados" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Rua Exemplo, 123 – Recife, PE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>&copy; 2026 TriStudio Planejados. Todos os direitos reservados.</span>
+      <span><a href="politica-de-privacidade.html">Política de Privacidade</a> | <a href="sitemap.xml">Mapa do Site</a></span>
+    </div>
+  </footer>
+
+  <button class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/header.js"></script>
+  <script src="js/menu-mobile.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
