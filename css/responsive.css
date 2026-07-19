@@ -1,0 +1,176 @@
+/* ===================================
+   RESPONSIVO - MOBILE
+   =================================== */
+
+@media (max-width: 1024px) {
+  .diferenciais__grid,
+  .ambientes-home__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .etapas__grid,
+  .depoimentos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diferenciais__grid,
+  .ambientes-home__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .etapas__grid,
+  .depoimentos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* NOVO: página Sobre */
+  .mvv__grid,
+  .equipe__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* NOVO: página Contato */
+  .contato__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header / Menu hambúrguer */
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background: var(--cor-clara);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--espaco-lg);
+    gap: var(--espaco-md);
+    transition: right var(--transicao-suave);
+    box-shadow: var(--sombra-forte);
+  }
+
+  .menu-mobile-ativo .header__nav {
+    right: 0;
+  }
+
+  .header__link {
+    color: var(--cor-cinza-escuro) !important;
+    font-size: 1.1rem;
+  }
+
+  .header__hamburguer {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    height: 90vh;
+    min-height: 500px;
+    text-align: center;
+  }
+
+  .hero__conteudo {
+    max-width: 100%;
+  }
+
+  .hero__botoes {
+    justify-content: center;
+  }
+
+  /* Grids em coluna única no mobile */
+  .diferenciais__grid,
+  .ambientes-home__grid,
+  .etapas__grid,
+  .depoimentos__grid,
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--espaco-md);
+  }
+
+  .footer__grid {
+    text-align: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-topo {
+    width: 42px;
+    height: 42px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .diferenciais__grid,
+  .ambientes-home__grid,
+  .etapas__grid,
+  .depoimentos__grid,
+  .footer__grid,
+  .historia__grid,
+  .mvv__grid,
+  .equipe__grid,
+  .campo-grupo {
+    grid-template-columns: 1fr;
+    gap: var(--espaco-md);
+  }
+    /* Página Sobre - história */
+  .historia__imagem {
+    order: -1;
+  }
+
+  /* Banner de página interna */
+  .banner-pagina {
+    padding: calc(var(--header-altura) + var(--espaco-md)) 0 var(--espaco-md);
+  }
+
+  /* Mapa/contato */
+  .contato__mapa {
+    min-height: 300px;
+  }
+
+  .contato__mapa iframe {
+    min-height: 300px;
+  }
+    .historia__grid,
+  .mvv__grid,
+  .equipe__grid,
+  .contato__grid,
+  .campo-grupo {
+    grid-template-columns: 1fr;
+    gap: var(--espaco-md);
+  }
+
+  .historia__imagem {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__botoes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .diferencial__card,
+  .etapa__card {
+    padding: var(--espaco-md);
+  }
+}
