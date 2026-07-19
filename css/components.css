@@ -715,3 +715,121 @@
   padding-left: var(--espaco-md);
   list-style: disc;
 }
+/* ===================================
+   GALERIA DE AMBIENTES
+   =================================== */
+.ambientes__categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.categoria-btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--cor-cinza-claro, #ddd);
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.categoria-btn:hover {
+  background: var(--cor-secundaria, #b08d57);
+  color: #fff;
+}
+
+.categoria-btn--ativo {
+  background: var(--cor-secundaria, #b08d57);
+  color: #fff;
+  border-color: var(--cor-secundaria, #b08d57);
+}
+
+.ambientes__galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.galeria__item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+}
+
+.galeria__imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.galeria__item:hover .galeria__imagem {
+  transform: scale(1.08);
+}
+
+/* ===================================
+   LIGHTBOX
+   =================================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox--ativo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__conteudo {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox__imagem {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 4px;
+}
+
+.lightbox__fechar,
+.lightbox__anterior,
+.lightbox__proxima {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.lightbox__fechar {
+  top: 20px;
+  right: 30px;
+}
+
+.lightbox__anterior {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox__proxima {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
