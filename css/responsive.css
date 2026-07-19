@@ -109,11 +109,12 @@
   }
 
   .btn-topo {
-    width: 42px;
-    height: 42px;
-    bottom: 20px;
-    right: 20px;
-  }
+  width: 42px;
+  height: 42px;
+  bottom: 84px;
+  right: 20px;
+}
+
   .diferenciais__grid,
   .ambientes-home__grid,
   .etapas__grid,
